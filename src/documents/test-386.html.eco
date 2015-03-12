@@ -1,6 +1,0 @@
----
-layout: home
-title: testing 386
----
-<%- (new Date()).toString() %>
-<h1>Page 386</h1>

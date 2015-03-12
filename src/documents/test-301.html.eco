@@ -1,6 +1,0 @@
----
-layout: home
-title: testing 301
----
-<%- (new Date()).toString() %>
-<h1>Page 301</h1>
