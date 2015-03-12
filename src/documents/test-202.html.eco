@@ -1,0 +1,6 @@
+---
+layout: home
+title: testing 202
+---
+<%- (new Date()).toString() %>
+<h1>Page 202</h1>

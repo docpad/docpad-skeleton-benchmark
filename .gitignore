@@ -1,0 +1,17 @@
+# Temp Files
+**/*.log
+**/.docpad.db
+
+# Build Files
+.idea/
+build/
+**/karma/coverage/
+components/
+bower_components/
+node_modules/
+out/
+
+# =====================================
+# CUSTOM MODIFICATIONS
+
+# None

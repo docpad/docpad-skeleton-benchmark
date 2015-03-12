@@ -1,0 +1,6 @@
+---
+layout: home
+title: testing 365
+---
+<%- (new Date()).toString() %>
+<h1>Page 365</h1>
