@@ -4,5 +4,6 @@
 git clone https://github.com/docpad/docpad-skeleton-benchmark.git
 cd docpad-skeleton-benchmark
 npm install
+npm run-script compile
 npm test
 ```

@@ -8,11 +8,11 @@ var template = process.argv.pop()
 var total = process.argv.pop()
 
 // read the file
-var fsUtil = require('fs')
+var safefs = require('safefs')
 var templateSource = null
 switch ( template ) {
     case 'jade':
-        templateSource = fsUtil.readFileSync('./template.html.jade')
+        templateSource = safefs.readFileSync('./templates/template.html.jade')
         break
 
     default:
@@ -24,9 +24,14 @@ function logError (err) {
 	if ( err )  console.log(err.stack)
 }
 
-// write files
-for ( var index = 0; index < total; index++ ) {
-	var templateOutPath = './src/documents/test-' + index + '.html.jade'
-	var templateOutSource = templateSource.toString().replace(/[%]/g, index)
-	fsUtil.writeFile(templateOutPath, templateOutSource, logError)
-}
+// ensure path
+safefs.ensurePath('./src/documents', function (err) {
+	if ( err )  throw err
+
+	// write files
+	for ( var index = 0; index < total; index++ ) {
+		var templateOutPath = './src/documents/test-' + index + '.html.jade'
+		var templateOutSource = templateSource.toString().replace(/[%]/g, index)
+		safefs.writeFile(templateOutPath, templateOutSource, logError)
+	}
+})
