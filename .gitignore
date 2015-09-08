@@ -1,17 +1,32 @@
+# 27 March 2015
+# https://github.com/bevry/base
+
 # Temp Files
-**/*.log
 **/.docpad.db
+**/out.*
+**/*.log
+**/*.cpuprofile
+**/*.heapsnapshot
 
 # Build Files
-.idea/
 build/
-**/karma/coverage/
 components/
 bower_components/
 node_modules/
 out/
+coffeejs/
+es5/
+
+# Editor Caches
+.c9/
+
+# Private Files
+.env
+.idea
+.cake_task_cache
+
 
 # =====================================
-# CUSTOM MODIFICATIONS
+# CUSTOM
 
 # None
