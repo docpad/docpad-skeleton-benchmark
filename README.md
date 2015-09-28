@@ -14,7 +14,7 @@ npm run-script compile
 npm test
 ```
 
-When running locally, if you also want to profile the performance issues, install the [cpuprofiler plugin](https://github.com/pflannery/docpad-plugin-cpuprofiler):
+When running locally, if you want to profile the performance issues also, install the [cpuprofiler plugin](https://github.com/pflannery/docpad-plugin-cpuprofiler):
 
 ``` shell
 docpad install cpuprofiler
