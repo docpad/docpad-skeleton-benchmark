@@ -2,7 +2,7 @@
 
 You have two options for seeing the benchmarks:
 
-[View the last result on Travis CI](https://travis-ci.org/docpad/docpad-skeleton-benchmark)
+[View the last result on Travis CI](https://travis-ci.com/docpad/docpad-skeleton-benchmark)
 
 ## Usage
 
