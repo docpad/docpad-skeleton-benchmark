@@ -1,3 +1,5 @@
+"use strict";
+
 // import
 const { join } = require("path");
 const mkdirp = require("mkdirp");
@@ -7,9 +9,10 @@ const getarg = require("get-cli-arg").default;
 
 // prepare
 const template = getarg("template") || "eco";
-const total = Number(getarg("total") || 100);
+const total = Number(getarg("total") || 1000);
 const templatePath = join(__dirname, "templates");
 const renderPath = join(__dirname, "src", "render");
+const outPath = join(__dirname, "out");
 
 // handle
 async function main() {
@@ -20,6 +23,8 @@ async function main() {
 	);
 
 	// ensure path
+	await rimraf(outPath);
+	await mkdirp(outPath);
 	await rimraf(renderPath);
 	await mkdirp(renderPath);
 	await Promise.all(

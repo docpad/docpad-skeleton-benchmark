@@ -26,8 +26,8 @@
     "npm": ">=2"
   },
   "dependencies": {
-    "docpad": "^6.78.3",
-    "docpad-plugin-eco": "^2.2.1",
+    "docpad": "~6.83.1",
+    "docpad-plugin-eco": "~2.5.0",
     "get-cli-arg": "^6.5.0",
     "mkdirp": "^1.0.4",
     "rmfr": "^2.0.0"
