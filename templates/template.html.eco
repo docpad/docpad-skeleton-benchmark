@@ -1,0 +1,6 @@
+<!---
+layout: home
+title: Page NUMBER
+--->
+<h1>Page NUMBER</h1>
+<p><%= new Date().toString() %></p>

@@ -6,16 +6,15 @@ You have two options for seeing the benchmarks:
 
 Or run locally:
 
-``` shell
+```bash
 git clone https://github.com/docpad/docpad-skeleton-benchmark.git
 cd docpad-skeleton-benchmark
 npm install
-npm run-script compile
 npm test
 ```
 
 When running locally, if you want to profile the performance issues also, install the [cpuprofiler plugin](https://github.com/pflannery/docpad-plugin-cpuprofiler):
 
-``` shell
+```bash
 docpad install cpuprofiler
 ```
